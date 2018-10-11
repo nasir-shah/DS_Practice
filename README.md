@@ -1,6 +1,6 @@
 ## **Data Structure Practice**
 
-##### This repository contains the source code of the **Algorithms** used to solve basic DS related problems.All algorithms are written in Python 3.6 . The time elapsed by each algorithm to sort 100 items is also given.
+##### This repository contains the source code of the **Algorithms** used to solve basic DS related problems.All algorithms are written in Python 3.6 . The time elapsed by each algorithm to sort 'n' items is also given.
 ----
 <!-- Identifiers, in alphabetical order -->
 1. **Insertion Sort**
