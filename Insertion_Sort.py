@@ -3,7 +3,7 @@ import time
 def insertion_sort(arr):
     global elapsed_time
     start_time = time.time()
-    for i in range(len(arr)):
+    for i in range(1,len(arr)):
         j = i
         while(j > 0 and arr[j] < arr[j - 1]):
             temp = arr[j]
