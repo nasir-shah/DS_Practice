@@ -1,1 +1,1 @@
-## Data Structure Practice
+## Algorithm and Data Structure Practice
