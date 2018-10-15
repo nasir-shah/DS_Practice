@@ -1,17 +1,32 @@
-import time
+'''
+This is the main file it contains all the imports and calls other modules to compute the result::
+'''
+import math 
+from itertools import permutations , combinations
+#from bubble_sort import bubble_sort
+from Selection_Sort import selection_sort
 
-def insertion_sort(arr):
-    global elapsed_time
-    start_time = time.time()
-    for i in range(1,len(arr)):
-        j = i
-        while(j > 0 and arr[j] < arr[j - 1]):
-            temp = arr[j]
-            arr[j] = arr[j - 1]
-            arr[j - 1] = temp
-            j -= 1
-    elapsed_time = time.time() - start_time
-    return(arr)
+###########################################################################################################
+''' Reading data raw data from the externael file '''
+data = []
+with open('data_set.txt','r') as f:
+    rawData = [line.strip().split(',') for line in f]
+    for datum in rawData:
+        data = data + datum
 
-print(insertion_sort([2,4,3,5,3,56,78,32,56,789,453,33,4,56,0,8,23,45,-1,-22,33,5,465,234,5,67,8,-90]))
-print("Time elapsed:: ", elapsed_time)
+for i in range(data.count('')):
+    data.remove('')
+    
+data = list(map(int , data))
+############################################################################################################
+
+print("Data to feed :\n", data)
+print("Total values in the data:\n",len(data))
+
+############################################################################################################
+
+# Calling Selection Sort
+print("Running Selection Sort")
+print(selection_sort(data))
+
+#############################################################################################################
