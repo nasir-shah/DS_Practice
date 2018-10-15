@@ -19,6 +19,7 @@ def data_generator():
             if((i+1)%15==0):
                 fid.write('\n')
         fid.close()
+# Warning: Un-comment below function only if you need to generate new data set
 #data_generator()
 ###########################################################################################################
 ''' Reading data raw data from the externael file '''
