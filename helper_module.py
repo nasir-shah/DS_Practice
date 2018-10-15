@@ -1,5 +1,5 @@
 ''' 
-This module contains basic funtions that are used as helper funciton in other modules
+This module contains basic funtions that are used as helpers in other modules
 '''
 def find_smallest(sub):
     temp = sub[0]
