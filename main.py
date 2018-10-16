@@ -1,14 +1,22 @@
 '''
 This is the main file, it contains all the imports and calls other modules to compute the result::
 '''
+###############################  General Imports   ######################################
+
 import math 
 import random
 from itertools import permutations , combinations
 
-#from bubble_sort import bubble_sort
-from Selection_Sort import selection_sort
+###############################  Sorting Imports   ######################################
+
+from Sorting.Selection_Sort import selection_sort
+
+###############################  Challenge Imports   ######################################
+
+from Challenges import Incture_Challenge
 
 ###########################################################################################################
+
 ''' Writing ramdon data to a file'''
 def data_generator():
     with open('data_set.txt','w') as fid:
@@ -32,16 +40,16 @@ with open('data_set.txt','r') as f:
 for i in range(data.count('')):
     data.remove('')
     
-data = list(map(int , data[:500]))
+#data = list(map(int , data[:500]))
 ############################################################################################################
 
-print("Data to feed :\n", data)
-print("Total values in the data:\n",len(data))
-print("\n")
+#print("Data to feed :\n", data)
+#print("Total values in the data:\n",len(data))
+#print("\n")
 ############################################################################################################
 
 # Calling Selection Sort
-print("Running Selection Sort")
-print(selection_sort(data))
+#print("Running Selection Sort")
+#print(selection_sort(data))
 
 #############################################################################################################

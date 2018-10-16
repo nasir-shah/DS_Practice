@@ -1,5 +1,5 @@
 from time import time
-import helper_module
+import Sorting.helper_module
             
 def selection_sort(arr):
     start = time()
