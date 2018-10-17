@@ -15,4 +15,4 @@ for i in range(1, len(arr)):
         marker[1] = end
 length += marker[1] - marker[0] + 1
 
-print("Length : ",length)
+print("Length : ", length)

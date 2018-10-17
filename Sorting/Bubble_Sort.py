@@ -1,8 +1,8 @@
-#from permutation import permutation
-
+from time import time 
 def bubble_sort( arr):
     swap_count = 0
     for i in range(1, len(arr)):
+        start = time()
         j = 1
         while(arr[j] < arr[j-1]):
             swap_count+=1
@@ -13,7 +13,7 @@ def bubble_sort( arr):
                 j = j+1
             else:
                 break
-        
     print("Total no. of swaps: ",swap_count)
+    end = time()
+    print("Elapsed time = ", end - start)
     return arr
-

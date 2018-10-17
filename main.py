@@ -1,19 +1,20 @@
 '''
-This is the main file, it contains all the imports and calls other modules to compute the result::
+This is the main file, it contains all the imports and calls other modules to
+compute the result::
 '''
 ###############################  General Imports   ######################################
 
-import math 
+import math
 import random
-from itertools import permutations , combinations
 
 ###############################  Sorting Imports   ######################################
 
 from Sorting.Selection_Sort import selection_sort
+from Sorting.Bubble_Sort import bubble_sort
 
 ###############################  Challenge Imports   ######################################
 
-from Challenges import Incture_Challenge
+#from Challenges import Incture_Challenge
 
 ###########################################################################################################
 
@@ -40,16 +41,21 @@ with open('data_set.txt','r') as f:
 for i in range(data.count('')):
     data.remove('')
     
-#data = list(map(int , data[:500]))
+data = list(map(int , data[:500]))
+
 ############################################################################################################
 
 #print("Data to feed :\n", data)
 #print("Total values in the data:\n",len(data))
 #print("\n")
-############################################################################################################
+###############################  Calling Selection Sort   #######################################
 
-# Calling Selection Sort
 #print("Running Selection Sort")
 #print(selection_sort(data))
 
-#############################################################################################################
+###############################  Calling Bubble Sort   ##########################################
+
+print("Running Bubble Sort")
+print(bubble_sort([-234,1,0,23,90,-23,-23]))
+
+##################################################################################################
